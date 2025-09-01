@@ -7,6 +7,7 @@ pipeline {                       // Defines the start of a Declarative Pipeline 
             steps {             // Contains the actual commands or steps to execute in this stage
                 echo "Pulling my code with groovy genarated script..."      // Prints a message to Jenkins console/log
                 echo "git branch: 'feature', url: 'https://github.com/Shankar414/first-pipeline.git'"         // Prints another message after pull
+                ls -la
             }
         }
 
