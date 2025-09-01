@@ -5,8 +5,8 @@ pipeline {                       // Defines the start of a Declarative Pipeline 
 
         stage('scm') {          // Defines a stage named 'scm' (often used for source code management steps)
             steps {             // Contains the actual commands or steps to execute in this stage
-                echo "Pulling my code.."      // Prints a message to Jenkins console/log
-                echo "pull completed"         // Prints another message after pull
+                echo "Pulling my code with groovy genarated script..."      // Prints a message to Jenkins console/log
+                echo "git branch: 'feature', url: 'https://github.com/Shankar414/first-pipeline.git'"         // Prints another message after pull
             }
         }
 
